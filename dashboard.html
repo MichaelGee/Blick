@@ -1,0 +1,110 @@
+<?php include 'includes/defines.php'?>
+<?php require_once "main.class.php";
+ $main = new main(); ?>
+
+<!doctype html>
+<html>
+<head>
+<title>Dashboard</title>
+<meta name="theme-color" content="#999999" />
+<meta name="viewport" content="width=device-width, initial-scale = 1.0, user-scalable = no">
+<link rel="stylesheet" type="text/css" href="dashboard.css">
+<link href="https://fonts.googleapis.com/css?family=Quicksand:600" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Khula" rel="stylesheet">
+
+
+    <script type="text/javascript" src="Jquery.js"></script>
+    <script type="text/javascript" src="comment_insert.js?t=<?php echo time (); ?>"></script>
+
+
+</head>
+<body>
+
+   <div id="nav">
+   <ul>
+       <li id="feed"><a href>Feeds</a></li>
+       <button id="logout"><a href>Logout</a></button>
+   </ul>
+   </div>
+
+<div id="feeds" class="box">
+	<div id="wrapper">
+
+
+    <div id="comment-wrapper">
+
+
+        <div class="comment-insert">
+        <h3 class="who-says">Says: Michael Gates</h3>
+             <div id="comment-post-btn" class="comment-post-btn-wrapper">
+
+               <button id="post">Post</button>
+            </div>
+            <div class="comment-insert-container">
+
+
+             <textarea id="comment-post-text" class="comment-insert-text"></textarea>
+
+            </div>
+
+
+        </div>
+        <div class= "comments-holder">
+            <div id="comment-list1">
+                        <h3 class="username-field">Michael Gates</h3>
+                        <div class="buttons">
+
+                                <ul>
+
+                                    <li class="delete-btn">X</li>
+
+                                </ul>
+
+                        </div>
+                        <div class="comment-text">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+            consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+            cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+            proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                            </p>
+
+
+
+
+
+
+
+                    </div>
+
+
+
+
+                </div>
+
+         <?php $comments = array("a", "b", "c", "d", "e", "f", "g" ); ?>
+          <?php include 'includes/comment_box.php'; ?>
+      </div>
+
+
+    </div>
+
+
+
+        <input type="hidden" id="userId" value="1"/>
+    <input type="hidden" id="userName" value="Michael Gates"/>
+
+
+</div>
+
+
+    </div>
+
+    <script type="text/javascript" src="dashboard.js"></script>
+    <script type="text/javascript" src="feeds.js"></script>
+
+
+</body>
+
+</html>

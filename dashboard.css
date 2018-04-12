@@ -1,0 +1,422 @@
+body{
+    background-color: whitesmoke;
+    margin: 0;
+    padding: 0;
+}
+
+#nav{
+    background-color: red;
+    width: 100%;
+    position:fixed;
+    box-shadow: 0 0 10px #222;
+    z-index: 6;
+}
+
+
+ul{
+    width:90%;
+}
+li{
+  display: inline-block;  
+}
+
+li, a{
+    text-decoration: none;
+    color: white !important;
+}
+
+
+#feed{
+    width: 80%;
+    margin-left: 10%;
+    text-align: center;
+    font-size: 20px;
+    font-family: 'Khula', sans-serif;
+}
+
+#logout{
+    padding: 8px;
+    border: .9px;
+    border-radius: 4px;
+    background:#2196f3;
+    cursor: pointer;
+    border-radius: 1px; 
+    color: white;
+    font-size: 15px;
+    font-family: 'Quicksand', sans-serif; 
+}
+
+
+
+ h3{
+    display: inline-block;
+    width: 100%;
+    margin: 0 auto;
+    color: white;
+    font-family: 'Quicksand', sans-serif;
+
+}
+
+.box{
+    padding-top:60px;
+    height: 500px;
+    text-align: center;
+}
+
+
+
+body{
+    background: #c7c7c7;
+}
+
+a img{
+    border: none;
+}
+
+#wrapper{
+    background: #fff;
+    width: 750px;
+    border: 1px solid #a1a1a1;
+    margin: 50px auto 50px auto;
+    height: auto;
+    text-align: left;
+    box-shadow: 0 0 7px #222;
+}
+
+
+
+#comment-wrapper{
+    margin: 10px;
+    border: 1px solid #e1e1e1;
+    height: auto;
+    width: auto;
+    color: #444;
+
+}
+
+
+h3.comment-title {
+    height: 40px;
+    width: 98%;
+    line-height: 37px;
+    font-size: 14px;
+    margin: 0 5px 0 5px;
+    color: #555;
+    border-bottom: 1px solid #e1e1e1;
+    text-align: left;
+}
+
+#comment-list1{
+    height: auto;
+    font-size: 13px;
+    margin: 10px 5px 10px 5px;
+    color: #555;
+    border-radius: 0.1px;
+     box-shadow: 0 0 0.1px #222;
+    border: 1px solid #e1e1e1;
+
+}
+
+
+
+
+
+#comment-list1 .user-img{
+    float: left;
+    height: 70px;
+    width: 70px;
+    margin: 2px;
+    background: #a1a1a1;
+
+}
+
+
+#comment-list2{
+    height: auto;
+    font-size: 13px;
+    margin: 10px 5px 10px 5px;
+    color: #555;
+    border-radius: 3px;
+    border: 1.5px solid #e1e1e1;
+}
+
+
+
+
+
+#comment-list2 .user-img{
+    float: left;
+    height: 70px;
+    width: 70px;
+    margin: 2px;
+    background: #a1a1a1;
+
+}
+
+
+h3.username-field{
+    color:black;
+    margin: 0 0 0 10px;
+    line-height: 27px;
+    font-size: 16px;
+    height: 25px;
+    font-family: 'Khula', sans-serif;
+}
+
+.comment-text{
+    display: block;
+    width: auto;
+    font-size: 15px;
+    margin: 0 10px 0 75px;
+    word-wrap: normal;
+    font-family: 'Quicksand', sans-serif;
+}
+
+.buttons{
+    float: right;
+    margin: 3px 10px 3px 10px;
+    height: 30px;
+    width: 50px;
+}
+
+.buttons ul{
+
+    list-style-type: none;
+    width: auto;
+    height: auto;
+    overflow: hidden;
+}
+
+li.delete-btn{
+    float: right;
+    height: 20px;
+    width: 20px;
+    text-align: center;
+    line-height: 21px;
+    color: #fff;
+    border-radius: 400px;
+    background:#2196f3;
+    cursor: pointer;
+}
+
+.delete-btn:hover{
+    opacity: 0.7;
+    transition: 0.7s;
+}
+
+
+ #comment-list2:hover{
+    border-color: #2196f3 ;
+}
+
+#comment-list1:hover{
+    border-color: #2196f3 ;
+}
+
+
+/*Comment Box*/
+
+
+.comment-insert{
+    height: auto;
+    width: auto;
+    margin: 10px 5px 10px 5px;
+    border:1px solid #e1e1e1;
+    position: relative;
+}
+
+.comment-insert h3.who-says{
+    color: black;
+    line-height: 35px;
+    height: 20px;
+    font-size: 12px;
+    margin: 0 10px 0 10px;
+    border-bottom:1px solid #e1e1e1;
+    width: auto;
+    font-family: 'Khula', sans-serif;
+}
+
+
+.comment-insert .comment-insert-container{
+    margin: 10px 10px 30px 10px;
+    min-height: 120px;
+    width: auto;
+    border: 1px solid #a1a1a1;
+    position: relative;
+
+}
+
+.comment-insert .comment-insert-container:hover{
+    border: 1px solid #c1c1c1;
+}
+
+.comment-insert textarea.comment-insert-text{
+    border: none;
+    width: 99.5%;
+    height: 96%;
+    color: #555;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+    position: absolute;
+}
+
+
+#post{
+    float:right;
+    margin-top: 134px;
+    margin-right: 12px;
+    color: white;
+    width: 80px;
+    height: 25px;
+    font-size: 15px;
+    border: none;
+    background: #2196f3;
+    font-family: 'Quicksand', sans-serif;
+}
+
+button:hover{
+    opacity: 0.7;
+    transition: 0.7s;
+}
+
+textarea{
+    border: 6px solid black;
+}
+
+
+
+
+/*Feeds CSS*/
+
+
+/*MEDIA QUERIES*/
+
+
+@media screen and (max-width:700px){
+    h3{
+        font-size: 10px;
+    }
+}
+
+@media screen and (max-width:480px){
+    h3{
+        font-size: 10px;
+    }
+     #C-1,#C-2,#C-3,#C-4,#C-5,#C-6,#C-7,#C-8{
+        width:90%;
+        height:150px;
+        margin-bottom: 7px;
+    }
+
+    #courses, li{
+        display:block;
+    }
+}
+
+@media screen and (max-width:320px){
+    h3{
+        font-size:9px;
+    }
+
+
+    #C-1,#C-2,#C-3,#C-4,#C-5,#C-6,#C-7,#C-8{
+        width:90%;
+        height:150px;
+        margin-bottom: 7px;
+    }
+
+    #courses, li{
+        display:block;
+    }
+}
+
+
+
+/*Feeds Media Quaries*/
+
+@media screen and (max-width:700px){
+    #wrapper{
+        width:90%;
+        height:auto;
+    }
+
+    .comment-text{
+        font-size:12px;
+    }
+
+    h3.username-field{
+        font-size:13px;
+    }
+
+    .delete-btn{
+        font-size:15px;
+        height:16px;
+        width:18px;
+        line-height:13px;
+    }
+
+    .comment-post-btn-wrapper{
+        font-size:13px;
+        width:100%;
+    }
+
+    .comment-insert{
+        width:auto;
+        height:auto;
+    }
+
+
+    button{
+        width: 12%;
+        font-size: 14px;
+    }
+
+    .comment-insert textarea.comment-insert-text{
+        width: 99%;
+    }
+
+
+}
+
+@media screen and (max-width:320px){
+    .comment-insert{
+        width:auto;
+        height:180px;
+    }
+
+    .comment-insert textarea.comment-insert-text{
+        width:98%;
+    }
+
+   button{
+       height:19px;
+       font-size:10px;
+       width:16%;
+   }
+
+   #comment-list1{
+       height:auto;
+   }
+
+   .comment-text{
+      display:inline-block;
+       margin: 0 10px 0 10px;
+       font-size:10px;
+   }
+
+   #comment-list1 .user-img{
+       width:15%;
+       height:40px;
+
+   }
+
+    li.delete-btn{
+        height:17px;
+        width:18px;
+        font-size:11px;
+         border-radius: 370px;
+         line-height:19px;
+    }
+}
