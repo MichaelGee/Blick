@@ -1,4 +1,3 @@
-
 var $overlay = $('#overlay');
 
 
@@ -16,6 +15,7 @@ $('#reg').click(function(){
 
 //Problems: Hints are shown even when form is valid
 //Solution: Hide and show them at appropriate times
+var $username = $("#username");
 var $password = $("#password2");
 var $confirmPassword = $("#confirm_password");
 
@@ -31,8 +31,25 @@ $("#second2").hide();
 });*/
 
 
+
+
+/*$("username").on('keydown', function(e){
+    if(e.keyCode == 32 && (this).val().indexOf(' ') >= 0){
+        return false;
+        $("#name_id").show();
+    }else{
+        enableSubmitEvent();
+    }
+});*/
+
+var alphaExp = /^[0-9a-zA-Z]+$/;
+
+function goodUsername(){
+    return $username.val() == alphaExp;
+}
+
 function isPasswordValid(){
-    return $password.val().length > 4;
+    return $password.val().length > 6;
 }
 
 function passwordsDontMatch(){
@@ -44,8 +61,17 @@ function arePasswordsMatching() {
 }
 
 function canSubmit(){
-    return isPasswordValid() && arePasswordsMatching();
+    return isPasswordValid() && arePasswordsMatching() && goodUsername();
 }
+
+function usernameEvent(){
+    if(goodUsername()){
+        canSubmit();
+    }else{
+        $('#name_id').show();
+    }
+}
+
 
 function passwordEvent(){
     //Find out if password is valid
@@ -67,7 +93,6 @@ function confirmPasswordEvent(){
         $('#second').show();
     }   
 }
-
 
 
 

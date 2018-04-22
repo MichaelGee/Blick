@@ -11,21 +11,22 @@
 <link rel="stylesheet" type="text/css" href="dashboard.css">
 <link href="https://fonts.googleapis.com/css?family=Quicksand:600" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css?family=Khula" rel="stylesheet">
-
-
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/css/materialize.min.css">
+<link type="text/css" rel="stylesheet" href="materielize/css/materialize.min.css"  media="screen,projection"/>
     <script type="text/javascript" src="Jquery.js"></script>
-    <script type="text/javascript" src="comment_insert.js?t=<?php echo time (); ?>"></script>
 
 
 </head>
 <body>
 
-   <div id="nav">
-   <ul>
-       <li id="feed"><a href>Feeds</a></li>
-       <button id="logout"><a href>Logout</a></button>
-   </ul>
-   </div>
+    <nav>
+    <div class="nav-wrapper navbar-fixed">
+      <a href="#" class="brand-logo center">Feeds</a>
+      <ul id="nav-mobile" class="right hide-on-med-and-down">
+        <li><a class="waves-effect btn">Logout</a></li>
+      </ul>
+    </div>
+  </nav>
 
 <div id="feeds" class="box">
 	<div id="wrapper">
@@ -83,8 +84,7 @@
 
                 </div>
 
-         <?php $comments = array("a", "b", "c", "d", "e", "f", "g" ); ?>
-          <?php include 'includes/comment_box.php'; ?>
+         
       </div>
 
 
@@ -100,7 +100,9 @@
 
 
     </div>
-
+ <!-- Compiled and minified JavaScript -->
+ <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/js/materialize.min.js"></script>
+ <script type="text/javascript" src="materialize/js/materialize.min.js"></script>
     <script type="text/javascript" src="dashboard.js"></script>
     <script type="text/javascript" src="feeds.js"></script>
 
