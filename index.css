@@ -7,7 +7,7 @@ body{
     width: 100%;*/
     
     /*background-color: #42a5f5;*/
-    background: red;
+    background: white;
     border:none;
     margin: 0px;
     padding: 0px;
@@ -18,82 +18,14 @@ body{
 
 
 #form{
-    margin: 12%;
-    
+    margin: 0 auto;
 }
 
 
-/*#Login, input{
-    display:block;
-}*/
-
-/*#Login{
-    
-    margin-left: 40%;
-    margin-top: 200px;
-    
-}*/
-
-
-/* The form labels styling*/
-/**#Login input[type="text"],
-#Login input[type="password"]{
-    border:none;
-    border-bottom: .7px solid #ffffff;
-    background: transparent;
-    height: 40px;
-    outline: none;
-    color:#fff;
-    font-size: 16px;
-}
-#Login input[type="text"]:focus,
-#Login input[type="password"]:focus{
-    border-bottom: .7px solid #0600ff;
-}
-::placeholder{
-    color:white;
-    font-size: 12px;
-    font-family: 'Quicksand', sans-serif;
-}
-
-/* submit button styling*/
-/**#Login input[type="submit"]{
-    border: .9px solid #0600ff;
-    outline: none; 
-    height: 40px;
-    width:195px;
-    margin-top:30px;
-    color: #fff;
-    font-size: 16px;
-    background:#0600ff;
-    cursor: pointer;
-    border-radius: 3px; 
-    font-family: 'Quicksand', sans-serif;
-}
-
-/* The hover effect*/
-/**#Login input[type="submit"]:hover{
-    opacity: .9;
-    background:transparent;    
-}
-
-h4{
-   width:30%;
-   text-align: center;
-   color:white;
-   font-size:25px;
-   font-family: 'Quicksand', sans-serif;
-}
-#Login a{
-    color: #fff;
-    font-size: 14px;
-    font-weight: bold;
-    text-decoration: none;
-}**/
-
-h2{
+.sign, h2{
     font-family: 'Khula', sans-serif;
     opacity:0.7;
+    font-size: 30px;
 }
 
 h3, a{
@@ -111,7 +43,7 @@ h3, a{
     background: #fff;
     opacity: .9;
     padding: 2em 2em 2em;
-    max-width: 50%;
+    width: 30%;
     margin: 30px auto 0;
     box-shadow: 0 0 10px #222;
     border-radius: 3px;   
@@ -167,6 +99,10 @@ input[type="submit"]:hover{
     font-family: 'Quicksand', sans-serif;
 }
 
+.page-footer{
+    margin-top:80px;
+}
+
 
 
 
@@ -179,6 +115,11 @@ input[type="submit"]:hover{
     top:0;
     left:0;
     position: absolute;
+}
+
+#reg{
+    opacity:0.7;
+    font-size: 30px;
 }
 
 #regs{
@@ -247,24 +188,42 @@ input[type="password"] focus{
     color: red;
 }
 
+.page-footer{
+    background-color:#323232 !important;
+}
+
 
 /*Media Quaries*/
 
+
+@media screen and (max-width: 700px){
+    #login{
+        height: 300px;
+        width: 50%;
+    }
+    .sign{
+        font-size: 27px;
+        margin: 1px;
+    }
+}
+
 @media screen and (max-width:350px){
 
-	#intro{
-		font-size:15px;
-		width:100%;
-        margin-top: 90px;
-        
-
-	}
-
-	#sitename{
-		font-size:30px;
-		margin-top:10px;
-		margin-right:70px;
-	}
+    #login{
+        height: 180px;
+    }
 
 
+}
+
+@media screen and (max-width: 450px){
+    #login{
+        height: 300px;
+        width: 50%;
+    }
+
+    .sign{
+        font-size: 27px;
+        margin: 1px;
+    }
 }

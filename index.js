@@ -9,6 +9,7 @@ $($overlay).hide();
 
 $('#reg').click(function(){
     $($overlay).show();
+    $('.page-footer').hide();
 });
 
 
