@@ -14,7 +14,9 @@ body{
    
 }
 
-
+.nav-wrapper{
+    background: #880E4F;
+}
 
 
 #form{
@@ -103,7 +105,11 @@ input[type="submit"]:hover{
     margin-top:80px;
 }
 
-
+i{
+    margin: 12px;
+    color: white !important;
+    cursor: pointer;
+}
 
 
 /*Registration*/

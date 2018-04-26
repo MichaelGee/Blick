@@ -12,8 +12,8 @@ body{
     z-index: 6;
 }
 
-/*.nav-wrapper{
-    background: #4caf50;
+.nav-wrapper{
+    background: #880E4F;
 }
 
 .waves-effect{
@@ -26,7 +26,7 @@ body{
 
 .waves-effect{
     background: #2196f3;
-}*/
+}
 
  h3{
     display: inline-block;
@@ -92,7 +92,7 @@ h3.comment-title {
     margin: 10px 5px 10px 5px;
     color: #555;
     border-radius: 0.1px;
-     box-shadow: 0 0 0.1px #222;
+    box-shadow: 0 0 0.1px #222;
     border: 1px solid #e1e1e1;
 
 }
