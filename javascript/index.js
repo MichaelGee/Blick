@@ -16,7 +16,7 @@ $('#reg').click(function(){
 
 //Problems: Hints are shown even when form is valid
 //Solution: Hide and show them at appropriate times
-var $username = $("#username");
+
 var $password = $("#password2");
 var $confirmPassword = $("#confirm_password");
 
@@ -43,11 +43,6 @@ $("#second2").hide();
     }
 });*/
 
-var alphaExp = /^[0-9a-zA-Z]+$/;
-
-function goodUsername(){
-    return $username.val() == alphaExp;
-}
 
 function isPasswordValid(){
     return $password.val().length > 6;
@@ -62,16 +57,9 @@ function arePasswordsMatching() {
 }
 
 function canSubmit(){
-    return isPasswordValid() && arePasswordsMatching() && goodUsername();
+    return isPasswordValid() && arePasswordsMatching();
 }
 
-function usernameEvent(){
-    if(goodUsername()){
-        canSubmit();
-    }else{
-        $('#name_id').show();
-    }
-}
 
 
 function passwordEvent(){
