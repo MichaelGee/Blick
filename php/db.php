@@ -6,8 +6,7 @@ $pass_word = "";
 try {
     $conn = new PDO("mysql:host=$servername;dbname=vote", $user_name, $pass_word);
     // set the PDO error mode to exception
-    $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-    echo "Connected successfully"; 
+    $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION); 
     }
 catch(PDOException $e)
     {
