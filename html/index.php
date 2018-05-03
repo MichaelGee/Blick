@@ -109,7 +109,7 @@
                     <p>
                         <label for="password">Password</label>
                         <input type="password" name="password" id="password2" placeholder="Choose a password">
-                        <h5 id="first">*enter a password longer than 4 characters</h5>
+                        <h5 id="first">*enter a password longer than 6 characters</h5>
             
                     </p>
         
