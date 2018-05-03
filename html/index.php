@@ -18,6 +18,8 @@
 <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.10/css/all.css" crossorigin="anonymous">
 <script type="text/javascript" src="../javascript/Jquery.js"></script>
+<script type="text/javascript" src="../javascript/request.js"></script>
+
 </head>
 <body>
     
@@ -91,6 +93,7 @@
               
 
     <!--Registration form-->
+    
     <div id="overlay">
         <div class="col-sm-12">
             <div>
@@ -118,7 +121,7 @@
                     </p>
         
         
-                    <input type ="submit"  value="Sign Up" id="submit">
+                    <input type ="submit" name='submit'  value="Sign Up" id="submit">
                 </form>
                 </div>
     </div>

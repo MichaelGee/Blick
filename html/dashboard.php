@@ -37,18 +37,19 @@ include('../php/authchecker.php');
 
 
 <div class="row">
-    <div class="col s12 m5">
-      <div class="card-panel teal">
+    <div id="comment" class="col s12 m5">
+      <div class="card-panel">
       <div class="row">
     <form class="col s12">
       <div class="row">
         <div class="input-field col s12">
           <textarea id="textarea1" class="materialize-textarea"></textarea>
-          <label for="textarea1">Textarea</label>
+          <label for="textarea1">Type a Proposal</label>
         </div>
       </div>
     </form>
   </div>
+  <a id="post" class="waves-effect waves-light btn-small">Button</a>
       </div>
     </div>
   </div>
