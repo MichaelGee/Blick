@@ -1,12 +1,12 @@
 <?php
 include('authchecker.php');
 include('db.php');
-$name = $_SESSION['USERNAME'];
-$post = $_POST[''];
+$name = $_SESSION['NAME'];
+$post = $_POST['propose'];
 $getId ="SELECT id FROM login_details where username ='$name'";
 $user_id = $conn->query($getId);
-$sql = "INSERT INTO proposal (user_id,name,post) VALUES('$user_id','$name',$post)";
+$sql = "INSERT INTO proposals (post,name) VALUES('$post','$name')";
 $conn->exec($sql);
-$datasql = "SELECT * FROM proposal";
+$datasql = "SELECT * FROM proposals";
 $result=$conn->query($datasql);
 ?>

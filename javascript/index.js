@@ -5,7 +5,7 @@ $('body').append($overlay);
 $($overlay).hide();
 
 
-var $username = $("#username");
+var $username = $("#name");
 var $password = $("#password2");
 var $confirmPassword = $("#confirm_password");
 
@@ -44,10 +44,10 @@ $("$confirmPassword").focusout(function(){
 function checkName(){
     var pattern = /^[a-zA-Z]*$/;
     var name =$('$username').val();
-    if(pattern.test(name) && name !== ''){
+    if(pattern.test(name) && name !== ' '){
         $("#name_id").hide();
     }else{
-        ("#name_id").show();
+        $("#name_id").show();
         errorName = true;
     }
 }
