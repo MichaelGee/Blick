@@ -1,13 +1,40 @@
+//The type effect
+(function(){
+	var app;
+	$(document).ready(function(){
+		return app.init();
+	});
+	app = {
+		text: "A simple platform for the expression of political views and proposals..",
+		index: 0,
+		chars: 0,
+		speed: 100,
+		container: '.text .content',
+		init: function(){
+			this.chars = this.text.length;
+			return this.write();
+		},
+		write: function(){
+			$(this.container).append(this.text[this.index]);
+			if(this.index<this.chars){
+				this.index++;
+				return window.setTimeout(function(){
+					return app.write();
+				}, this.speed);
+			}
+		}
+	};
+}.call(this));
+
+
 
 var $overlay = $('#overlay');
+
+
+
 $('body').append($overlay);
 
 $($overlay).hide();
-
-
-var $username = $("#name");
-var $password = $("#password2");
-var $confirmPassword = $("#confirm_password");
 
 
 $('#reg').click(function(){
@@ -18,6 +45,12 @@ $('#reg').click(function(){
 
 
 
+//Problems: Hints are shown even when form is valid
+//Solution: Hide and show them at appropriate times
+var $username = $("#username");
+var $password = $("#password2");
+var $confirmPassword = $("#confirm_password");
+
 //Hide hints
 $("#first").hide();
 $("#name_id").hide();
@@ -25,73 +58,66 @@ $("#second").hide();
 $("#second2").hide();
 
 
-var errorName = false;
-var errorPassword = false;
-var errorReenter = false;
 
-$("$username").focusout(function(){
-    checkName();
-});
+function isPasswordValid(){
+    return $password.val().length > 6;
+}
 
-$("$password").focusout(function(){
-    checkPassword();
-});
+function passwordsDontMatch(){
+    return $password.val() !== $confirmPassword.val();
+}
 
-$("$confirmPassword").focusout(function(){
-    checkRepassword();
-});
+function arePasswordsMatching() {
+    return $password.val() === $confirmPassword.val();
+}
 
-function checkName(){
-    var pattern = /^[a-zA-Z]*$/;
-    var name =$('$username').val();
-    if(pattern.test(name) && name !== ' '){
-        $("#name_id").hide();
-    }else{
-        $("#name_id").show();
-        errorName = true;
-    }
+function canSubmit(){
+    return isPasswordValid() && arePasswordsMatching() 
 }
 
 
-function checkPassword(){
-    var passwordLength = $('#password').val().length;
-    if(passwordLength < 6){
-        $("#first").show();
-        errorPassword = true;
+
+
+function passwordEvent(){
+    //Find out if password is valid
+    if(isPasswordValid()){
+        //Hide hide if valid
+        $('#first').hide();
+    } else {
+        //else show hint
+        $('#first').show();
+    }  
+}
+
+function confirmPasswordEvent(){
+     //Find out if password and confirmation match
+    if(arePasswordsMatching()){
+        //Hide hint if it matches
+        $('#second').hide();
     } else{
-        $("#first").hide();
-    }
-}
-
-function checkRepassword (){
-    var password = $("#password").val();
-    var retypePassword = $("#confirmPassword").val();
-    if (password !== retypePassword){
-        $("#second").show();
-        errorReenter = true;
-    }else{
-        $("#second").hide();
-    }
+        $('#second').show();
+    }   
 }
 
 
-$("#regs").submit(function(){
-    errorName = false;
-    errorPassword = false;
-    errorReenter = false;
 
-    checkName();
-    checkPassword();
-    checkRepassword();
+function enableSubmitEvent(){
+    
+   $("#submit").prop("disabled", !canSubmit()); 
+}
 
-    if(errorName === false && errorPassword === false && errorReenter === false){
-        alert("Registration Successful!");
-        return true;
-    }else{
-        alert("Please fill the form correctly");
-        return false;
-    }
-});
+
+
+
+//When event happens on password input
+$password.focus(passwordEvent).keyup(passwordEvent).focus(confirmPasswordEvent).keyup(enableSubmitEvent);
+    
+
+
+//When event happens on confirmation input 
+$confirmPassword.focus(confirmPasswordEvent).keyup(confirmPasswordEvent).keyup(enableSubmitEvent);
+
+enableSubmitEvent();
 
 
 

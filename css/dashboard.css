@@ -7,12 +7,12 @@ nav{
   position: fixed;  
 }
 .nav-wrapper{
-    background: #2196f3;
+    background: #3f51b5;
     position: fixed;
 }
 
 .waves-effect{
-    background:#FFC107 !important;
+    background:#ff4081 !important;
 }
 
 .brand-logo{
@@ -50,19 +50,12 @@ nav{
 
 #comment{
     width: 100%;
-
 }
 
 .card-panel{
-    margin-top:1px !important;
+    margin-top:5px !important;
     margin-bottom: 1px !important;
 }
-
-
-
-
-/*Feeds CSS*/
-
 
 /*MEDIA QUERIES*/
 
@@ -83,5 +76,4 @@ nav{
 
 
 
-/*Feeds Media Quaries*/
 
