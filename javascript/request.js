@@ -1,11 +1,12 @@
 $('#post').on('click',function(){
-    var proposal= $('#textarea1');
+    var proposal = $('#textarea2').val();
     $.ajax({
         url:"../php/poster.php",
-        type:"POST",
+        method:"POST",
+        dataType:'text',
         data:{propose:proposal},
-        success:function(response){
-            $('#textarea').html(response);
+        success:function(data){
+            $('body').html('<li>Suck my balls kyle</li>');
         }
     });
 })
