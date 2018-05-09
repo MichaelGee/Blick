@@ -14,6 +14,7 @@ include('../php/authchecker.php');
 <link type="text/css" rel="stylesheet" href="../materialize/css/materialize.min.css"  media="screen,projection"/>
 <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 <script type="text/javascript" src="../javascript/Jquery.js"></script>
+<script type="text/javascript" src="../javascript/request.js"></script>
 
 
 </head>
@@ -43,7 +44,7 @@ include('../php/authchecker.php');
     <form  action="../php/poster.php" method="POST"class="col s12">
         <div class="row">
           <div class="input-field col s12">
-            <textarea id="textarea2" class="materialize-textarea" data-length="500"></textarea>
+            <textarea id="textarea2" name = "propose" class="materialize-textarea" data-length="500"></textarea>
             <label for="textarea2">Proposal</label>
         </div>
         
