@@ -65,7 +65,7 @@
     </p>
         
     <p>
-       <input type="submit" name="" value="Log In"> 
+       <input type="submit" name="submit" value="Log In"> 
     </p>
         <h3 id="reg">Sign Up</h3>
     </form>
