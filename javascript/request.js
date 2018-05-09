@@ -6,7 +6,7 @@ $('#post').on('click',function(){
         dataType:'text',
         data:{propose:proposal},
         success:function(data){
-            $('body').html('<li>Suck my balls kyle</li>');
+            $('body').html(data);
         }
     });
 })
