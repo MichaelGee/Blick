@@ -7,7 +7,7 @@ $('#post').on('click',function(e){
         dataType:'text',
         data:{propose:proposal},
         success:function(){
-            $('body').load('../html/dashboard.php');
+            $('#content').load('../php/refresh.php');
         }
     });
 })
