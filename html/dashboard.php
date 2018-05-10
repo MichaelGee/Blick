@@ -44,80 +44,17 @@ include('../php/authchecker.php');
             <textarea id="textarea2" name = "propose" class="materialize-textarea" data-length="500"></textarea>
             <label for="textarea2">Proposal</label>
         </div>
-        
-  <button  id="post" class="btn waves-effect waves-light" type="submit" name="action">Post</button>
-      </div>      
+        </div>
+        <button  id="post" class="btn waves-effect waves-light" type="submit" name="action">Post</button>     
     </form>
+    </div>
+    </div>
+  </div>
 </div>
-  </div>
-      <div class="row">
-        <div id="comment" class="col s12 m5">
-          <div class="card-panel">
-            <span class="black-text">I am a very simple card. I am good at containing small bits of information.
-            I am convenient because I require little markup to use effectively. I am similar to what is called a panel in other frameworks.
-            I am a very simple card. I am good at containing small bits of information.
-            I am convenient because I require little markup to use effectively. I am similar to what is called a panel in other frameworks.
-            I am a very simple card. I am good at containing small bits of information.
-            I am convenient because I require little markup to use effectively. I am similar to what is called a panel in other frameworks.
-            I am a very simple card. I am good at containing small bits of information.
-            I am convenient because I require little markup to use effectively. I am similar to what is called a panel in other frameworks.
-          
-            </span>
-          </div>
-        </div>
-      </div>
-      <div class="row">
-        <div id="comment" class="col s12 m5">
-          <div class="card-panel">
-            <span class="black-text">I am a very simple card. I am good at containing small bits of information.
-            I am convenient because I require little markup to use effectively. I am similar to what is called a panel in other frameworks.
-            I am a very simple card. I am good at containing small bits of information.
-            I am convenient because I require little markup to use effectively. I am similar to what is called a panel in other frameworks.
-            I am a very simple card. I am good at containing small bits of information.
-            I am convenient because I require little markup to use effectively. I am similar to what is called a panel in other frameworks.
-            I am a very simple card. I am good at containing small bits of information.
-            I am convenient because I require little markup to use effectively. I am similar to what is called a panel in other frameworks.
-          
-            </span>
-          </div>
-        </div>
-      </div>
-      <div class="row">
-        <div id="comment" class="col s12 m5">
-          <div class="card-panel">
-            <span class="black-text">I am a very simple card. I am good at containing small bits of information.
-            I am convenient because I require little markup to use effectively. I am similar to what is called a panel in other frameworks.
-            I am a very simple card. I am good at containing small bits of information.
-            I am convenient because I require little markup to use effectively. I am similar to what is called a panel in other frameworks.
-            I am a very simple card. I am good at containing small bits of information.
-            I am convenient because I require little markup to use effectively. I am similar to what is called a panel in other frameworks.
-            I am a very simple card. I am good at containing small bits of information.
-            I am convenient because I require little markup to use effectively. I am similar to what is called a panel in other frameworks.
-          
-            </span>
-          </div>
-        </div>
-      </div>
-      <div class="row">
-        <div id="comment" class="col s12 m5">
-          <div class="card-panel">
-            <span class="black-text">I am a very simple card. I am good at containing small bits of information.
-            I am convenient because I require little markup to use effectively. I am similar to what is called a panel in other frameworks.
-            I am a very simple card. I am good at containing small bits of information.
-            I am convenient because I require little markup to use effectively. I am similar to what is called a panel in other frameworks.
-            I am a very simple card. I am good at containing small bits of information.
-            I am convenient because I require little markup to use effectively. I am similar to what is called a panel in other frameworks.
-            I am a very simple card. I am good at containing small bits of information.
-            I am convenient because I require little markup to use effectively. I am similar to what is called a panel in other frameworks.
-          
-            </span>
-          </div>
-        </div>
+    <div id="content-container">
+  <?php include('../php/refresh.php');?>
     </div>
-  </div>
 
-
-    </div>
  <!-- Compiled and minified JavaScript -->
  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/js/materialize.min.js"></script>
  <script type="text/javascript" src="../materialize/js/materialize.min.js"></script>
