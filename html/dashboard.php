@@ -12,6 +12,7 @@ include('../php/authchecker.php');
 <link href="https://fonts.googleapis.com/css?family=Khula" rel="stylesheet">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/css/materialize.min.css">
 <link type="text/css" rel="stylesheet" href="../materialize/css/materialize.min.css"  media="screen,projection"/>
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.10/css/all.css" crossorigin="anonymous">
 <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 <script type="text/javascript" src="../javascript/Jquery.js"></script>
 </head>
@@ -22,7 +23,7 @@ include('../php/authchecker.php');
           <a href="#" class="brand-logo center">Feeds</a>
           <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
           <ul class="right hide-on-med-and-down">
-            <li><a href="#">Your Proposals</a></li>
+            <li><a href="#" id="proLink">Your Proposals</a></li>
             <li><a href = "../php/logout.php"class="waves-effect waves-light btn">Logout</a></li>
           </ul>
         </div>

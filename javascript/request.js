@@ -11,3 +11,7 @@ $('#post').on('click',function(e){
         }
     });
 })
+
+$('#post').click(function(){
+    $('#textarea').val('');
+});

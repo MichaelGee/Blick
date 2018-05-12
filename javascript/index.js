@@ -43,6 +43,11 @@ $('#reg').click(function(){
     $('.page-footer').hide();
 });
 
+$('#exit').click(function(){
+	$($overlay).hide();
+	$('#login').show();
+	$('.page-footer').show();
+});
 
 
 //Problems: Hints are shown even when form is valid

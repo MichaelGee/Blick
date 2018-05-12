@@ -6,9 +6,19 @@ $result = $conn->query($datasql);
 $result_array = $result->fetchAll(PDO::FETCH_ASSOC);
 ?>
 <ul id="content">
-<?php foreach ($result_array as $info){
-?>
-
-    <li class="card-panel"><h2><?php echo $info['name']?></h2><br><?php echo $info['post']?></li>
+<?php foreach ($result_array as $info){?>
+    <li>
+      <div class='row'>
+        <div id='comment' class='col s12 m5'>
+          <div class='card-panel'>
+            <span class='black-text'>
+            <h6><?php echo $info['name']?></h6><p id="text"><br>
+            <?php echo $info['post']?></p>
+            </span><p>
+            <br><i class='far fa-edit fa-1x' id="edit"></i><i class="far fa-heart" id="like"></i>
+          </div>
+        </div>
+      </div>
+    </li>
 <?php }?>
 </ul>

@@ -26,7 +26,7 @@
           <div class="brand-logo left">Blick</div>
           <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
           <ul class="right hide-on-med-and-down">
-            <li><a href="#">Trending Proposals</a></li>
+            <li><a href="#" id="reg">Sign Up</a></li>
             <li><a href="#">Donate</a></li>
             <li><a href="#">About Us</a></li>
           </ul>
@@ -34,7 +34,7 @@
       </nav>
 
       <ul class="sidenav" id="mobile-demo">
-        <li><a href="#">Trending Proposals</a></li>
+        <li><a href="#">Sign Up</a></li>
         <li><a href="#">Donate</a></li>
         <li><a href="#">About Us</a></li>
       </ul>
@@ -46,7 +46,6 @@
               <div class="content"></div>
               <div class="dash"></div>
             </div>
-          
           </div>
         </div>
       </div>
@@ -67,7 +66,6 @@
     <p>
        <input type="submit" name="submit" value="Log In"> 
     </p>
-        <h3 id="reg">Sign Up</h3>
     </form>
 
     <footer class="page-footer">
@@ -78,13 +76,12 @@
                   <p class="grey-text text-lighten-4">You can use rows and columns here to organize your footer content.</p>
                 </div>
                 <div class="col l4 offset-l2 s12">
-                  <h5 class="white-text">Contact Us</h5>
+                  <h5 class="white-text" id="contact">Contact Us</h5>
                   <ul class="logo">
-                    <a href="#"><i class="fas fa-envelope fa-2x"></i></a>
-                    <a href="#"><i class="fab fa-facebook fa-2x"></i></a>
-                    <a href="#"><i class="fab fa-twitter fa-2x"></i></a>
+                    <a href="#"><i class="fas fa-envelope fa-2x" id="mail"></i></a>
+                    <a href="#"><i class="fab fa-facebook fa-2x" id="face"></i></a>
+                    <a href="#"><i class="fab fa-twitter fa-2x" id="twit"></i></a>
                     <a href="https://github.com/MichaelGee"><i class="fab fa-github fa-2x"></i></a>
-                    <li><a class="grey-text text-lighten-3" href="#!">Link 4</a></li>
                   </ul>
                 </div>
               </div>
@@ -103,6 +100,7 @@
         <div class="col-sm-12">
             <div>
                 <form action="../php/register.php" method="post" id="regs">
+                <i class="fas fa-times" id="exit"></i>
                 <h2 id="reg">Register Here</h2>
                     <p>
                         <label for="username">Username</label>
