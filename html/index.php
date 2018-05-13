@@ -21,7 +21,7 @@
 <body>
     
     
-    <nav>
+<nav>
         <div class="nav-wrapper">
           <div class="brand-logo left">Blick</div>
           <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
@@ -32,22 +32,14 @@
           </ul>
         </div>
       </nav>
-
       <ul class="sidenav" id="mobile-demo">
         <li><a href="#">Sign Up</a></li>
         <li><a href="#">Donate</a></li>
         <li><a href="#">About Us</a></li>
       </ul>
 
-      <div class="row">
-        <div id="card" class="col s12 m5">
-          <div class="card-panel">
-            <div id="intro" class="text">
-              <div class="content"></div>
-              <div class="dash"></div>
-            </div>
-          </div>
-        </div>
+      <div id="intro">A simple platform for the expression of political views<br/>
+      and proposals.
       </div>
       
     <div id='form' class="col-sm-12">

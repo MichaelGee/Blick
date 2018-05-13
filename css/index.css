@@ -18,12 +18,16 @@ body{
     font-size: 40px !important;
     margin-left: 60px !important;
     font-family: 'Gugi', cursive !important;
-    color: #ff4081 !important;
+    color: #FFFF00 !important;
 }
 
+nav .sidenav-trigger i{
+    color: white !important;
+    line-height: 36px !important;
+}
 
 .nav-wrapper{
-    background: #3f51b5;
+    background: #0088a3 !important; 
 }
 
 nav, ul, a{
@@ -34,38 +38,9 @@ nav, ul, a{
 
 #intro{
     text-align: center;
-    margin-top: 5%;
-    margin-bottom: 15%;
-    font-size:50px;
+    margin: 4%;
+    font-size: 1.875em;
     font-family: 'Khula', sans-serif !important;
-}
-
-#card{
-    width: 100% !important;
-    padding: 0;
-}
-.card-panel{
-    margin: 0 !important;
-    border-radius: 0 !important;
-    background: #3f51b5 !important;
-    height: 400px;
-    color: white !important;
-}
-
-
-.text{
-    width: 100%;
-    text-align: center;
-    height:30px;
-    padding-top: 12px;
-}
-
-
-.text.dash{
-    display: inline-block;
-    height: 3px;
-    background-color:#66ffcc;
-    animation: blink .8s infinite linear;
 }
 
 
@@ -93,7 +68,7 @@ nav, ul, a{
     opacity: .9;
     padding: 2em 2em 4em;
     width: 30%;
-    margin: 50px auto;
+    margin: 30px auto;
     box-shadow: 0 0 3px #222;
     border-radius: 3px;   
 }
@@ -129,7 +104,7 @@ input[type="submit"]{
     margin-top: 20px;
     border: .9px;
     border-radius: 4px;
-    background:#3f51b5;
+    background:#00b8d4;
     cursor: pointer;
     border-radius: 10px; 
     color: white;
@@ -246,16 +221,16 @@ input[type="password"]{
 
 input[type="text"] focus,
 input[type="password"] focus{
-    border-bottom: .7px solid #0600ff;
+    border-bottom: .7px solid #00b8d4;
 }
 
 #submit, input[type="submit"]{
     padding: 8px;
     border: .9px;
     border-radius: 4px;
-    background:#ff4081;
+    background:#00b8d4;
     cursor: pointer;
-    color: white;
+    color: black;
     font-size: 18px;
     font-family: 'Quicksand', sans-serif;
 }
