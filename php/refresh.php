@@ -3,7 +3,8 @@ include('db.php');
 
 $datasql = "SELECT * FROM proposals";
 $result = $conn->query($datasql);
-$result_array = $result->fetchAll(PDO::FETCH_ASSOC);
+$result_array = array_reverse($result->fetchAll(PDO::FETCH_ASSOC));
+$counter = 2;
 ?>
 <ul id="content">
 <?php foreach ($result_array as $info){?>
@@ -15,7 +16,7 @@ $result_array = $result->fetchAll(PDO::FETCH_ASSOC);
             <h6><?php echo $info['name']?></h6><p id="text"><br>
             <?php echo $info['post']?></p>
             </span><p>
-            <br><i class='far fa-edit fa-1x' id="edit"></i><i class="far fa-heart" id="like"></i>
+            <br><i class='far fa-edit fa-1x' id="edit"></i><i class="far fa-heart" id="like" name='<?php echo $info['id']?>'></i><p><?php echo $counter;?></p>
           </div>
         </div>
       </div>

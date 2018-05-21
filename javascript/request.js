@@ -8,10 +8,17 @@ $('#post').on('click',function(e){
         data:{propose:proposal},
         success:function(){
             $('#content').load('../php/refresh.php');
+            $('#textarea2').val('');
         }
     });
 })
 
-$('#post').click(function(){
-    $('#textarea').val('');
+function reload(){
+    $('#content').load('../php/refresh.php');
+}
+//setInterval(reload,2000);
+$( "ul li div #like" ).click(function() {
+    alert($(this).attr('name'));
+    
 });
+   

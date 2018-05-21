@@ -30,7 +30,7 @@ nav .sidenav-trigger i{
     background: #0088a3 !important; 
 }
 
-nav, ul, a{
+a{
     font-size: 15px !important;
     font-family: 'Khula', sans-serif !important;
     color: white !important;
@@ -134,7 +134,7 @@ input[type="submit"]:hover{
     margin-left: 35px !important;
 }
 
-#mail,#face,#twit, i{
+#git,#face,#twit, i{
     margin: 12px;
     color: white !important;
     cursor: pointer;
@@ -152,7 +152,7 @@ input[type="submit"]:hover{
 .rights{
     font-family: 'Khula', sans-serif !important;
 }
-.sidenav, a{
+#side, .sidenav{
     color: black !important;
 }
 

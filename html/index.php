@@ -33,9 +33,9 @@
         </div>
       </nav>
       <ul class="sidenav" id="mobile-demo">
-        <li><a href="#">Sign Up</a></li>
-        <li><a href="#">Donate</a></li>
-        <li><a href="#">About Us</a></li>
+        <li><a href="#" id="side">Sign Up</a></li>
+        <li><a href="#" id="side">Donate</a></li>
+        <li><a href="#" id="side">About Us</a></li>
       </ul>
 
       <div id="intro">A simple platform for the expression of political views<br/>
@@ -64,13 +64,13 @@
             <div class="container">
               <div class="row">
                 <div class="col l6 s12">
-                  <h5 class="white-text">Footer Content</h5>
-                  <p class="grey-text text-lighten-4">You can use rows and columns here to organize your footer content.</p>
+                  <!-- <h5 class="white-text">Footer Content</h5> -->
+                  <!-- <p class="grey-text text-lighten-4">You can use rows and columns here to organize your footer content.</p> -->
                 </div>
                 <div class="col l4 offset-l2 s12">
                   <h5 class="white-text" id="contact">Contact Us</h5>
                   <ul class="logo">
-                    <a href="#"><i class="fas fa-envelope fa-2x" id="mail"></i></a>
+                    <a href="#"><i class="fab fa-github-alt fa-2x" id="git"></i></a>
                     <a href="#"><i class="fab fa-facebook fa-2x" id="face"></i></a>
                     <a href="#"><i class="fab fa-twitter fa-2x" id="twit"></i></a>
                     <a href="https://github.com/MichaelGee"><i class="fab fa-github fa-2x"></i></a>

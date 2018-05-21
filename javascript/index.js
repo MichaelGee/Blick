@@ -98,11 +98,21 @@ function confirmPasswordEvent(){
      //Find out if password and confirmation match
     if(arePasswordsMatching()){
         //Hide hint if it matches
-        $('#second').hide();
+		$('#second').hide();
     } else{
-        $('#second').show();
+		$('#second').show();
     }   
 }
+
+function dontMatch(){
+	if($confirmPassword.val().length > $password.val().length){
+		$('#second2').show();
+		$('#second').hide();
+	}else{
+		$('#second2').hide();
+	}
+}
+
 
 
 
@@ -121,6 +131,11 @@ $password.focus(passwordEvent).keyup(passwordEvent).focus(confirmPasswordEvent).
 
 //When event happens on confirmation input 
 $confirmPassword.focus(confirmPasswordEvent).keyup(confirmPasswordEvent).keyup(enableSubmitEvent);
+
+$confirmPassword.focus(dontMatch).keyup(dontMatch).keyup(enableSubmitEvent);
+
+
+
 
 enableSubmitEvent();
 
