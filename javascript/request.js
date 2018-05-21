@@ -13,12 +13,14 @@ $('#post').on('click',function(e){
     });
 })
 
-function reload(){
+function refresh(){
     $('#content').load('../php/refresh.php');
 }
-//setInterval(reload,2000);
-$( "ul li div #like" ).click(function() {
-    alert($(this).attr('name'));
-    
-});
+setInterval(refresh,2000);
+
+function like(x){
+    console.log('refresh');
+    var id = $('#like').attr('name');
+    alert(x);
+};
    
