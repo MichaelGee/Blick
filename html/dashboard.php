@@ -2,10 +2,10 @@
 include('../php/authchecker.php');
 ?>
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
 <title>Dashboard</title>
-<meta name="theme-color" content="#999999" />
+<meta name="theme-color" content="#317EFB" />
 <meta name="viewport" content="width=device-width, initial-scale = 1.0, user-scalable = no">
 <link rel="stylesheet" type="text/css" href="../css/dashboard.css">
 <link href="https://fonts.googleapis.com/css?family=Quicksand:600" rel="stylesheet">
@@ -42,7 +42,7 @@ include('../php/authchecker.php');
     <form  action="../php/poster.php" method="post" class="col s12">
         <div class="row">
           <div class="input-field col s12">
-            <textarea id="textarea2" name = "propose" class="materialize-textarea" data-length="500"></textarea>
+            <textarea id="textarea2" name = "propose" class="materialize-textarea" data-length="1000"></textarea>
             <label for="textarea2">Proposal</label>
         </div>
         </div>

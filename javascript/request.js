@@ -16,11 +16,19 @@ $('#post').on('click',function(e){
 function refresh(){
     $('#content').load('../php/refresh.php');
 }
-setInterval(refresh,2000);
+//setInterval(refresh,2000);
 
 function like(x){
-    console.log('refresh');
-    var id = $('#like').attr('name');
-    alert(x);
+    var id = x;
+    alert(id);
+    $.ajax({
+        url:"../php/liker.php",
+        method:"POST",
+        dataType:'text',
+        data:{identification:id},
+        success:function(){
+            $('#content').load('../php/refresh.php');
+        }
+    });
 };
    

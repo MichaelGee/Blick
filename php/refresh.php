@@ -1,10 +1,8 @@
 <?php
 include('db.php');
-
 $datasql = "SELECT * FROM proposals";
 $result = $conn->query($datasql);
 $result_array = array_reverse($result->fetchAll(PDO::FETCH_ASSOC));
-$counter = 2;
 ?>
 <ul id="content">
 <?php foreach ($result_array as $info){?>
@@ -16,10 +14,12 @@ $counter = 2;
             <h6><?php echo $info['name']?></h6><p id="text"><br>
             <?php echo $info['post']?></p>
             </span><p>
-            <br><i class='far fa-edit fa-1x' id="edit"></i><i class="far fa-heart" id="like" name='<?php echo $info['id']?>'></i><p><?php echo $counter;?></p>
+            <br><i class='far fa-edit fa-1x' id="edit"></i>
+            <i class="far fa-heart" id="like" name='<?php echo $info['id']?>' onclick="like(<?php echo $info['id']?>);">
+          </i><p><?php?></p>
           </div>
         </div>
-      </div>
+      </div>  
     </li>
 <?php }?>
 </ul>

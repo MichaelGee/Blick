@@ -3,6 +3,10 @@
     margin-left: 19%;
 }
 
+#proContain{
+    margin-top: 10px;
+}
+
 .navbar-fixed{
     background: #0088a3;
     position: fixed;
@@ -24,4 +28,20 @@
     color: #000000 !important;
     font-family: 'Khula', sans-serif !important;
     font-weight: bold;
+}
+
+#save, a{
+    margin-right: 20px !important;
+}
+
+form, .row, .col{
+    padding: 12px 30px;
+}
+
+
+@media screen and (max-width: 780px){
+    #profile{
+        width: 100% !important;
+        margin-left: 0%;
+    }
 }
