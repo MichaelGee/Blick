@@ -32,10 +32,15 @@
 
 #save, a{
     margin-right: 20px !important;
+    margin-bottom: 3px !important;
 }
 
 form, .row, .col{
     padding: 12px 30px;
+}
+
+.row{
+    margin-bottom: 1px !important;
 }
 
 

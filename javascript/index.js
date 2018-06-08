@@ -135,9 +135,9 @@ $confirmPassword.focus(confirmPasswordEvent).keyup(confirmPasswordEvent).keyup(e
 $confirmPassword.focus(dontMatch).keyup(dontMatch).keyup(enableSubmitEvent);
 
 
-
-
 enableSubmitEvent();
+
+
 
 
 

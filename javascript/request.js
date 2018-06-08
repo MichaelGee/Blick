@@ -16,11 +16,10 @@ $('#post').on('click',function(e){
 function refresh(){
     $('#content').load('../php/refresh.php');
 }
-//setInterval(refresh,2000);
+setInterval(refresh,2000);
 
 function like(x){
     var id = x;
-    alert(id);
     $.ajax({
         url:"../php/liker.php",
         method:"POST",
@@ -31,4 +30,3 @@ function like(x){
         }
     });
 };
-   

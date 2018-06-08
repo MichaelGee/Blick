@@ -60,6 +60,7 @@ include('../php/authchecker.php');
  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/js/materialize.min.js"></script>
  <script type="text/javascript" src="../materialize/js/materialize.min.js"></script>
  <script type="text/javascript" src="../javascript/request.js"></script>
+ <script type="text/javascript" src="../javascript/makeitred.js"></script>
     <script>
 
   // Or with jQuery
